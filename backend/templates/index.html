@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Tells the browser what character set to use -->
+  <meta charset="UTF-8">
+
+  <!-- Makes the website look good on phones and tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Text that appears on the browser tab -->
+  <title>My Resin Art Shop</title>
+
+  <!-- Connects this page to the CSS file -->
+  <!-- Flask uses url_for() to find files in the static folder -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+
+<!-- Header section at the top of the page -->
+<header>
+
+  <!-- Main title of the website -->
+  <h1>My Resin Art Shop</h1>
+
+  <!-- Navigation menu -->
+  <nav>
+
+    <!-- Link to the homepage -->
+    <a href="/">Home</a>
+
+    <!-- Link to the shop page -->
+    <a href="/shop">Shop</a>
+
+    <!-- Link to the cart page -->
+    <a href="/cart">Cart</a>
+
+    <!-- Link to the about page -->
+    <a href="/about">About</a>
+
+  </nav>
+
+</header>
+
+<!-- Hero section (the main section visitors see first) -->
+<section class="hero">
+
+  <!-- Secondary heading -->
+  <h2>Handmade Resin Art</h2>
+
+  <!-- Clicking the image takes the user to the shop page -->
+  <a href="/shop">
+
+    <!-- Displays an image from the static/images folder -->
+    <img
+      src="{{ url_for('static', filename='images/butterfly1.jpg') }}"
+      alt="butterfly resin tray gold"
+      width="200">
+
+  </a>
+
+  <!-- Second image -->
+  <a href="/shop">
+
+    <img
+      src="{{ url_for('static', filename='images/darkbutterfly1.jpg') }}"
+      alt="butterfly resin tray dark"
+      width="200">
+
+  </a>
+
+  <!-- Third image -->
+  <a href="/shop">
+
+    <img
+      src="{{ url_for('static', filename='images/pinkwhiteheart.jpg') }}"
+      alt="white heart trinket dish"
+      width="200">
+
+  </a>
+
+  <!-- Fourth image -->
+  <a href="/shop">
+
+    <img
+      src="{{ url_for('static', filename='images/planttraylarge.jpg') }}"
+      alt="plant tray"
+      width="200">
+
+  </a>
+
+  <!-- Short description below the images -->
+  <p>Beautiful handmade resin pieces created by me!</p>
+
+  <!-- Button that links to the shop page -->
+  <a href="/shop" class="btn">Shop Now</a>
+
+</section>
+
+<!-- Footer section at the bottom of the page -->
+<footer>
+
+  <!-- Copyright text -->
+  <p>&copy; 2026 nezzonezz Art</p>
+
+</footer>
+
+</body>
+</html>
+
+<!--
+
+Right-click index.html
+
+Click Open in Browser
+
+Choose Chrome / Firefox
+
+Live Preview
+
+Go to Settings → Plugins
+
+Install Live Preview
+
+Restart PyCharm
+
+Right-click index.html → Open in Browser → Live Preview -->

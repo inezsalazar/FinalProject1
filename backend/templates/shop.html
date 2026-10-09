@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Connects this page to style.css -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>Shop</title>
+</head>
+
+<body>
+
+<!-- Header section -->
+<header>
+    <h1>Shop</h1>
+
+    <!-- Navigation links -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/shop">Shop</a>
+        <a href="/cart">Cart</a>
+        <a href="/about">About</a>
+    </nav>
+</header>
+
+
+<!-- Main shop section -->
+<section class="shop">
+
+    <!-- Page heading -->
+    <h2>Available Products</h2>
+
+
+    <!-- Product 1 -->
+    <div class="product">
+
+        <!-- Product image -->
+        <img
+            src="{{ url_for('static', filename='images/butterfly1.jpg') }}"
+            alt="Gold butterfly resin tray"
+            width="250">
+
+        <!-- Product name -->
+        <h3>Gold Butterfly Tray</h3>
+
+        <!-- Product price -->
+        <p>$25.00</p>
+
+        <!-- Button for adding the product to the cart -->
+        <button>Add to Cart</button>
+
+    </div>
+
+
+    <!-- Product 2 -->
+    <div class="product">
+
+        <img
+            src="{{ url_for('static', filename='images/darkbutterfly1.jpg') }}"
+            alt="Dark butterfly resin tray"
+            width="250">
+
+        <h3>Dark Butterfly Tray</h3>
+
+        <p>$25.00</p>
+
+        <button>Add to Cart</button>
+
+    </div>
+
+
+    <!-- Product 3 -->
+    <div class="product">
+
+        <img
+            src="{{ url_for('static', filename='images/pinkwhiteheart.jpg') }}"
+            alt="Pink and white heart resin dish"
+            width="250">
+
+        <h3>Pink and White Heart Dish</h3>
+
+        <p>$20.00</p>
+
+        <button>Add to Cart</button>
+
+    </div>
+
+
+    <!-- Product 4 -->
+    <div class="product">
+
+        <img
+            src="{{ url_for('static', filename='images/planttraylarge.jpg') }}"
+            alt="Resin plant tray"
+            width="250">
+
+        <h3>Plant Resin Tray</h3>
+
+        <p>$30.00</p>
+
+        <button>Add to Cart</button>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 nezzonezz Art</p>
+</footer>
+
+</body>
+</html>
